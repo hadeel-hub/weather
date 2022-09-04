@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weatherforecast</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="code.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>DojoWeather</h1>
+            <ul>
+                <li onclick="popMessage()">Burbank</li>
+                <li onclick="popMessage()">Chicago</li>
+                <li onclick="popMessage()">Dallas</li>
+            </ul>
+        </header>
+        <nav class="second">
+            <h1>San Jose</h1>
+            <p>show temperature in</p> 
+            <select onchange="degree(this)"  name="temp" id="first">
+                <option value="Celsius" selected>C</option>
+                <option value="Fehrenheit">F</option>
+            </select>
+        </nav>
+        <main >
+            <div class="element">
+                <h2>Today</h2>
+                <img src="some_rain.png" alt="rain">
+                <p>some rain</p>
+                <div class="tempretures">
+                    <p class="max">24</p>
+                    <p class="min">18</p>
+                </div>
+            </div>
+            <div class="element">
+                <h2>Tomorrow</h2>
+                <img src="some_sun.png" alt="sun">
+                <p>some sun</p>
+                <div class="tempretures">
+                    <p class="max">27</p>
+                    <p class="min">19</p>
+                </div>
+            </div>
+            <div class="element">
+                <h2>Friday</h2>
+                <img src="some_clouds.png" alt="clouds">
+                <div>
+                    <p>some clouds</p>
+                    <div class="tempretures">
+                        <p class="max">21</p>
+                        <p class="min">16</p>
+                    </div>
+                </div>
+            </div>
+            <div class="element">
+                <h2>Thursday</h2>
+                <img src="some_sun.png" alt="sun">
+                <div>
+                    <p>some sun</p>
+                    <div class="tempretures">
+                        <p class="max">26</p>
+                        <p class="min">21</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer id="move">
+
+            <img src="cookie.png" alt="biscuit">
+            <h1>Stop!Cookie time</h1>
+            <p>
+                WE USE COOKIES( sadly not the edible ones) to personalize content and ads,
+                to provide social media featues and to analyse our traffic.
+                <a href="Read more"> Read more</a>
+            </p>
+            <button onclick="hide()"> I Accept</button>
+        </footer>
+    </div>
+    <script src="code.js"></script>
+</body>
+
+</html>
